@@ -1,0 +1,261 @@
+/*
+  zmenit display = cez flexbox? nie, floating.
+*/
+
+
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body {
+font-family: 'Merriweather', Helvetica, sans-serif;
+  background-color:#FFF1F1;
+  font-size: 1em;
+  margin-bottom: 5em;
+}
+
+.main_header,
+.banner {
+  text-align:center; 
+}
+.banner {
+  border-bottom: 3.5px solid black;
+  margin-bottom: 2px;
+}
+h1 {
+  margin: 0;
+  padding: 1.35em;
+}
+h2 {
+  padding-top: 1.35em;
+  margin-top: 0;
+}
+p {
+  padding: 0 1em;
+}
+#copyright {
+  color: black;
+  font-weight:400;
+  font-style:italic;
+  text-align: center;
+}
+.wrapper {
+ max-width: 335px;
+ background-color: #CB8585  ;
+ margin: 0 auto;
+}
+
+
+/*--------------FORM----------------*/
+form {
+  margin: 0px auto;
+  padding: 10px 20px;
+  background: #E1C4C4;
+  
+  border-top: 2px solid black;
+}
+fieldset {
+  border: none;  
+  margin-top: 20px;
+  margin-bottom: 1.7em;
+}
+.contact_information {
+  border-bottom: 1.5px solid black;
+ 
+}
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea,
+select {
+  background: rgba(255, 227, 227,0.2);
+  border: none;
+  font-size: 16px;
+  height: auto;
+  margin: 0;
+  outline: 0;
+  padding: 15px;
+  width: 100%;
+  background-color: #FFE3E3;
+  color: #8a97a0;
+  margin-bottom: 30px;
+  box-shadow:inset 0 2px 0 rgba(0,0,0, .3);
+}
+input:required {
+    background:#e0e0e0;
+    border:1px solid #999;
+}
+input:required:valid {
+    background:#e5fff6;
+    border:1px solid #999;
+}
+input:required:invalid {
+    background:#db4545;
+    border:1px solid #999;
+}
+input:optional {
+ border:1px solid #999;
+
+}
+input:hover,
+textarea:hover,
+input:focus,
+textarea:focus{
+    transition: 0.8s;
+    transform:scale(1.3);
+    border-radius: 5px;
+    border:1px solid black;
+    box-shadow:none;
+    margin-bottom: 30px;
+}
+::-webkit-input-placeholder { text-align:right; }
+input:-moz-placeholder { text-align:right; }
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin: 0 6px 12px 0;
+}
+.form, 
+input,
+label,
+button {
+  display:block;
+}
+.newsletter input {
+  display:inline-block;
+}
+
+label {
+  margin-top: 8px;
+  margin-bottom: 12px;
+}
+
+label.news_label {
+  display:inline;
+  font-size: 0.9em;
+}
+
+.letter {
+  padding: 4px 10px;
+  border-radius: 100%;
+  margin: 4px 6px 4px -16px;
+  color: white;
+  background-color: salmon;
+  
+}
+
+legend {
+  margin-bottom: 10px;
+  font-size: 1.2em;
+}
+
+
+/* -------------Buttons---------------*/
+
+
+button {
+  width: 100%;
+  display:block;
+  padding: 15px 25px;
+  font-size: 1.5em;
+  cursor: pointer;
+  text-align: center;	
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #52bab3;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.reset {
+  background-color:#ff784f;
+}
+.button:hover {
+  text-transform: uppercase;
+  }
+.reset:hover {
+   background-color: #ff3d02;
+}  
+.submit:hover {
+   background-color: #378983;
+}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+
+/*      -------------     Media Q    ------------    */
+@media (min-width: 761px) {
+body {
+  font-size: 1.1em;
+}
+.wrapper {
+  max-width: 600px;
+  margin: 0 auto;
+  }
+input[type="radio"],
+input[type="checkbox"] {
+  margin: 0 6px 12px 0;
+  height:1em;
+  width: 1em;
+}
+}
+
+@media (min-width:1020px) {
+body {
+  font-size: 1.2em;
+}
+.wrapper {
+  max-width: 900px;
+}
+input[type="radio"],
+input[type="checkbox"] {
+  margin: 0 6px 12px 0;
+  height:1em;
+  width: 1em;
+}
+
+.contact_information input[type="text"],
+.contact_information input[type="email"],
+.contact_information input[type="tel"],textarea,
+.contact_information select,
+.contact_information label {
+  display: inline-block;
+ 
+  }
+
+.contact_information input[type="text"],
+.contact_information input[type="email"],
+.contact_information input[type="tel"],
+.contact_information textarea,
+select {
+  width: 65%;
+  }
+.contact_information label {
+  width: 30%;
+  }
+
+.button {
+  display:block; 
+  max-width: 50%;
+  margin: 20px auto;
+  font-size: 1.75em;
+  }
+textarea {
+  height: 150px;
+  }
+textarea:hover,
+textarea:focus{
+    transition: 0.8s;
+    transform:scale(1.2);
+  }
+
+}
