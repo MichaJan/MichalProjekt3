@@ -68,15 +68,16 @@
 
              <fieldset class="newsletter">
               <legend><span class="letter">B</span> Newsletter </legend>
-                <label>Select the type of newsletter you would like to receive</label>
+                <h3>Select the type of newsletter you would like to receive</h3>
 
                 <input type="checkbox" id="html_news" name="user_news" value="newsletter_html"><label class="news_label" for="html_news">HTML News</label><br>
 
                 <input type="checkbox" id="css_news" name="user_news" value="newsletter_css"><label class="news_label" for="css_news"> CSS News</label><br>
 
                 <input type="checkbox" id="js_news" name="user_news" value="newsletter_js"><label class="news_label" for="js_news"> JS News</label>
-
-                 <label>Newsletter format</label>
+<!--                 <label >Newsletter format</label> -->
+<!--                Nick used in his course label without "for" when creating radio input, he used "for" in labels after each input instead -cannot we do the same?-->
+              <h3> Newsletter format </h3>
                 <input type="radio" id="html" name="user_format" value="format_html"><label class="news_label" for="html">HTML</label><br>
                 <input type="radio" id="plain" name="user_format" value="format_plain"><label class="news_label" for="plain"> Plain text</label>
               <label for="ideas"> Let us know about your suggestions:</label>
